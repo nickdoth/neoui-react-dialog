@@ -1,0 +1,30 @@
+{
+  "name": "neoui-react-dialog",
+  "version": "1.0.0",
+  "description": "Neoui react dialog component",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server --devtool eval --progress --colors --content-base dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iuap-design/neoui-react-dialog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iuap-design/neoui-react-dialog/issues"
+  },
+  "homepage": "https://github.com/iuap-design/neoui-react-dialog#readme",
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.1"
+  }
+}
