@@ -57,11 +57,11 @@ Dialog = React.createClass({
 
 	componentDidMount: function() {
 		this.popup = document.createElement("nav");
-
 		document.body.appendChild(this.popup);
 	},
 
 	render: function() {
+		console.log(this.props);
 		return (
 			<div>
 				<button id="msgDialogBtn" className="u-button u-button-primary raised accent" onClick={this.openModal}>提示框</button>
