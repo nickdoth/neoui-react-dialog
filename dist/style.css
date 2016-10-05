@@ -24,7 +24,7 @@ h1, h3 {
     margin: 0 0 20px 0;
 }
 
-.modal {
+/*.modal {
     width: 200px;
     height: 100px;
     padding: 20px;
@@ -37,7 +37,7 @@ h1, h3 {
 
     border: 1px solid #ccc;
     background: white;
-}
+}*/
 
 button {
     display: block;

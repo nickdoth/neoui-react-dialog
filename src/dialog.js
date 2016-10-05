@@ -4,6 +4,8 @@ import {on,stopEvent,trigger} from 'neoui-sparrow/js/event';
 import {extend} from 'neoui-sparrow/js/extend';
 import React from 'react';
 
+require('../dist/style.css');
+
 var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
 var Dialog, DialogInline, Modal;
 
@@ -29,15 +31,15 @@ DialogInline = React.createClass({
 
 Modal = React.createClass({
 	render: function() {
-		if(this.props.isOpen){
-			return (
-					<div className="modal">
-						{this.props.children}
-					</div>
+		return 	(
+			<ReactCSSTransitionGroup 
+				className="modal"
+				transitionName={this.props.transitionName}
+				transitionEnterTimeout={200}
+				transitionLeaveTimeout={200}>
+				{this.props.isOpen ? this.props.children : null}
+			</ReactCSSTransitionGroup>
 		);
-		} else {
-			return <div></div>;
-		}
 	}
 });
 
